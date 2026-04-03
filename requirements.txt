@@ -1,0 +1,9 @@
+yfinance
+pandas
+numpy
+matplotlib
+scipy
+arch
+xlsxwriter
+fpdf
+streamlit
