@@ -60,6 +60,7 @@ if st.sidebar.button("Lancer l'Analyse"):
                 "Methode": m, 
                 "Exceptions": tester.x, 
                 "Taux Obs (%)": round(p_obs * 100, 2),
+                "P_value": round(p_kup, 4),
                 "Statut": "✅ Valide" if p_kup > 0.05 else "❌ Rejete"
             })
 

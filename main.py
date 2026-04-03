@@ -76,7 +76,7 @@ def main():
         print(f"\n[2] Récupération des données pour {tickers}...")
         prices, returns = dl.get_portfolio_data(tickers, start_date, end_date)
     except Exception as e:
-        print(f"❌ Erreur lors du téléchargement : {e}")
+        print(f" Erreur lors du téléchargement : {e}")
         return
 
     # --- ÉTAPE 3 : CALCULS ---
@@ -122,7 +122,7 @@ def main():
     rp.generate_pdf(df_res)
 
     print("\n====================================================")
-    print("✅ ANALYSE TERMINÉE")
+    print("ANALYSE TERMINÉE")
     print(f"Rapports disponibles dans : {os.path.abspath('outputs')}")
     print("====================================================")
 
